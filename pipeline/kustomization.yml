@@ -1,0 +1,6 @@
+resources:
+  - maven-extract-project-version-cluster-task.yml
+  - quarkus-hw-build-pipeline.yml
+  - quarkus-hw-build-trigger-template.yml
+  - quarkus-hw-build-event-listener.yml
+  - quarkus-hw-build-event-listener-route.yml
