@@ -35,9 +35,6 @@ spec:
           workspace: workspace
         - name: maven-settings
           workspace: maven-settings
-      volumeMounts:
-        - name: maven-repo
-          mountPath: /workspace/.m2  # Montando o volume no diretório correto
       runAfter:
         - git-clone
     - name: maven-extract-project-version
@@ -67,6 +64,3 @@ spec:
   workspaces:
     - name: workspace
     - name: maven-settings
-  volumes:
-    - name: maven-repo
-      emptyDir: {}  # Usando um volume temporário para o repositório Maven
