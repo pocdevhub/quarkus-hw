@@ -67,3 +67,6 @@ spec:
   workspaces:
     - name: workspace
     - name: maven-settings
+  volumes:
+    - name: maven-repo
+      emptyDir: {}  # Usando um volume temporário para o repositório Maven
