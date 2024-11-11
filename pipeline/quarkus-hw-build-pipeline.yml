@@ -35,6 +35,9 @@ spec:
           workspace: workspace
         - name: maven-settings
           workspace: maven-settings
+      env:
+        - name: MAVEN_OPTS
+          value: "-Dmaven.repo.local=/workspace/.m2" 
       runAfter:
         - git-clone
     - name: maven-extract-project-version
